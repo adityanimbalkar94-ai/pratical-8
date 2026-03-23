@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="title">My Image Gallery</h1>
+
+    <div class="gallery">
+        <div class="card">
+            <img src="https://cdn.britannica.com/22/124622-004-D9D8D6EF/F-117.jpg" width="300">
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThGddBHrqSEfU_VlJoSiNkDasDZSmf1rrnDA&s"width="300">
+        </div>
+
+        <div class="card">
+            <img src="https://c.files.bbci.co.uk/74ec/live/8f6f41e0-57d1-11f0-afd3-09c045feb7a1.jpg"width="300">
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8lC_FC_BbOgvOuK0QqzJ7CB_JPZjsoGtCzQ&s"width="300">
+        </div>
+
+        <div class="card">
+            <img src="https://irp.cdn-website.com/e346530e/dms3rep/multi/fighter-jet-jet-aircraft-army-87088.jpeg"width="300">
+        </div>
+
+        <div class="card">
+            <img src="https://i0.wp.com/asiatimes.com/wp-content/uploads/2025/04/NGAD-1.jpg?fit=780%2C439&quality=89&ssl=1"width="300">
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+EXTERNAL CSS
+ body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+.title {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 300px;
+    height: 200px;
+    display: block;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card:hover img {
+    transform: scale(1.2);
+    filter: brightness(70%);
+}
